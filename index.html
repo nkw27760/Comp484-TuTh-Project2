@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        This is your Giga Pet
+      </h1>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+         <!-- Replace pet image with your own pet image -->
+        <img class="pet-image" src="images/rock.jpg" alt="Picture of a rock used as the pet image">
+      </section>
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> rock-happiness index (RHI) units </strong></div>
+        <div>Energy: <strong><span class="energy"></span> energy points</strong></div>
+        <p class="pet-notification" aria-live="polite">Your rock seems like it's waiting for you to do something.</p>
+        <div class="button-container">
+          <button class="treat-button">
+            Treat
+          </button>
+          <button class="play-button">
+            Play
+          </button>
+          <button class="exercise-button">
+            Exercise
+          </button>
+          <button class="rest-button">
+            Rest
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="pet-journal" aria-labelledby="journal-heading">
+      <h2 id="journal-heading">The rock's thoughts</h2>
+      <button class="toggle-comments-button" type="button">Show or Hide Comments</button>
+      <div class="pet-comments" aria-label="Pet comments"></div>
+    </section>
+
+    <div class="achievement-overlay" role="dialog" aria-modal="true" aria-labelledby="achievement-title" aria-hidden="true">
+      <div class="achievement-popup">
+        <button class="achievement-close-button" type="button">Close</button>
+        <h2 id="achievement-title">Achievement unlocked</h2>
+        <p><strong>Dedicated Geologist</strong></p>
+        <p>You have cared for your rock ten whole times. The rock remains the same as ever.</p>
+      </div>
+    </div>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>
